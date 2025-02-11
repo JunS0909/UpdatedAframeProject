@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-physics-system@v4.2.2/dist/aframe-physics-system.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/aframe-extras@7.1.0/dist/aframe-extras.min.js"></script>
+
+    <script src="script.js"></script>
+	<script src="orbit.js"></script>
+	<script src="people.js"></script>
+	<script src="trees.js"></script>
+  </head>
+  <body>
+      <a-scene physics="debug: false" light="defaultLightsEnabled: false">
+			<a-assets>
+			<a-assets_item id="trees" src="stylized_tree/scene.gltf"></a-assets_item>
+			<a-assets_item id="person" src="person/scene.gltf"></a-assets_item>
+			</a-assets>
+		<a-entity light="type: ambient; color: #777;intensity:0.2"></a-entity>	
+		<a-plane static-body position="0 -5 0" rotation="-90 0 0" width="1000" height="1000" color="green" shadow="receive: true"></a-plane>
+		<a-box position="0 -6 0" id="lightsources">
+			<a-sphere id="sun" color="yellow" radius="20" position="0 250 0" light="type:directional;intensity:6;castShadow:true;color:#FF0" ></a-sphere>
+			<a-sphere id="moon" color="gray"  radius="20" position="0 -250 0" light="type:directional;intensity:0.5;castShadow:true;color:#00F"></a-sphere>
+		</a-box>
+		<a-box  position="0 -4.95 0" rotation="-90 0 0" width="200" height="200" color="green"></a-box>
+		<a-box position="115 -4.95 0" rotation="-90 0 0" width="30" height="260" color="grey"></a-box>
+		<a-box position="-115 -4.95 0" rotation="-90 0 0" width="30" height="260" color="grey"></a-box>
+		<a-box position="0 -4.95 115" rotation="-90 0 90" width="30" height="260" color="grey"></a-box>
+		<a-box position="0 -4.95 -115" rotation="-90 0 90" width="30" height="260" color="grey"></a-box>
+		<a-sky id="day" color="white"></a-sky>
+		<a-gltf-model src="#people" position="0 -5 0" scale="0.2 0.2 0.2" animation-mixer ></a-gltf-model>
+      <a-camera active="true" id="mainCamera" position="-5 1.3 4">
+		<a-cursor raycaster="objects: [interact]" color="rgb(255, 120, 23)">
+		  </a-cursor>
+	  </a-camera>
+	  
+
+    </a-scene>
+  </body>
+</html>

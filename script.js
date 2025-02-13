@@ -1,5 +1,5 @@
 let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
-let scene, lightsources, trees = [],c;
+let scene, lightsources, trees = [],c, birds = [];
 window.onload = function(){
   scene = document.querySelector("a-scene"); 
   lightsources= document.getElementById("lightsources");
@@ -13,6 +13,13 @@ window.onload = function(){
 
 	
 	c = new Car(0, 0, 0);
+
+	for (let i=0;i<=5;i++){
+	let x = rnd(-50,50);
+    let z = rnd(-50,50);
+	birds.push(new Birds(x,z));
+
+	}
 	
 	window.addEventListener("keydown",function(e){
 		

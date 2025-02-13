@@ -12,6 +12,7 @@ class Car{
 		this.obj.setAttribute("src","#car");
 		this.obj.setAttribute("scale",{x:8,y:8,z:8});
 		this.obj.setAttribute("position",{x:0,y:-9,z:0});
+		this.obj.setAttribute("rotation",{x:-180,y:0,z:0});
 
 
 		
@@ -19,7 +20,7 @@ class Car{
 		this.camera.setAttribute("active",false);
 		this.camera.setAttribute("wasd-controls-enabled",true);
 		this.camera.setAttribute("position",{x:0,y:6,z:0});
-		this.camera.setAttribute("rotation",{x:0,y:0,z:180});
+		this.camera.setAttribute("rotation",{x:0,y:0,z:0});
 		
 		
 		this.obj.addEventListener("click",()=>{

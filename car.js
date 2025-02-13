@@ -4,31 +4,13 @@ class Car{
 		this.x = x;
 		this.z = z;
 		this.y = y;
-		this.a = 0;
-		this.da = 0.05;
+
 	
 		
-		this.obj = document.createElement("a-box");
+		this.obj = document.createElement("a-gltf-model");
 		this.obj.setAttribute("interact","");
-		//this.obj.setAttribute("dynamic-body","");
-		this.obj.setAttribute("height",5);
-		this.obj.setAttribute("depth",10);
-		this.obj.setAttribute("width",6);
-		this.obj.setAttribute("rotation",{x:0,y:0,z:0});
-		this.obj.setAttribute("color","red");
-		let wheela = document.createElement("a-cylinder");
-		wheela.setAttribute("height",6.2);
-		wheela.setAttribute("radius",1.25);
-		wheela.setAttribute("rotation",{x:0,y:0,z:90});
-		wheela.setAttribute("position",{x:0,y:-3,z:3});
-		this.obj.append(wheela);
-		let wheelb = document.createElement("a-cylinder");
-		wheelb.setAttribute("height",6.2);
-		wheelb.setAttribute("radius",1.25);
-		wheelb.setAttribute("rotation",{x:0,y:0,z:90});
-		wheelb.setAttribute("position",{x:0,y:-3,z:-3});
-		this.obj.append(wheelb);
-		this.obj.setAttribute("position",{x:0,y:-5,z:0});
+		this.obj.setAttribute("scale",{x:1,y:1,z:1});
+
 		
 		this.camera = document.createElement("a-camera");
 		this.camera.setAttribute("active",false);

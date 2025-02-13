@@ -11,7 +11,7 @@ class Car{
 		this.obj.setAttribute("interact","");
 		this.obj.setAttribute("src","#car");
 		this.obj.setAttribute("scale",{x:8,y:8,z:8});
-		this.obj.setAttribute("position",{x:0,y:-10,z:0});
+		this.obj.setAttribute("position",{x:0,y:-9,z:0});
 
 		
 		this.camera = document.createElement("a-camera");

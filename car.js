@@ -10,7 +10,7 @@ class Car{
 		this.obj = document.createElement("a-gltf-model");
 		this.obj.setAttribute("interact","");
 		this.obj.setAttribute("src","#car");
-		this.obj.setAttribute("scale",{x:1,y:1,z:1});
+		this.obj.setAttribute("scale",{x:10,y:10,z:10});
 		this.obj.setAttribute("position",{x:0,y:-5,z:0});
 
 		

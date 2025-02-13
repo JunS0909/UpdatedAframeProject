@@ -14,11 +14,10 @@ window.onload = function(){
 	
 	c = new Car(0, 0, 0);
 
-	for (let i=0;i<=5;i++){
+	for (let i=0;i<=20;i++){
 	let x = rnd(-50,50);
     let z = rnd(-50,50);
-	let y = rnd(40,50);
-	birds.push(new Bird(x,y,z));
+	birds.push(new Bird(x,z));
 
 	}
 	

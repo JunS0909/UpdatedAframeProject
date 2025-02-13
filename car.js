@@ -19,7 +19,7 @@ class Car{
 		this.camera.setAttribute("active",false);
 		this.camera.setAttribute("wasd-controls-enabled",true);
 		this.camera.setAttribute("position",{x:0,y:6,z:0});
-		this.camera.setAttribute("rotation",{x:0,y:0,z:0});
+		this.camera.setAttribute("rotation",{x:0,y:0,z:180});
 		
 		
 		this.obj.addEventListener("click",()=>{

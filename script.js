@@ -17,7 +17,7 @@ window.onload = function(){
 	for (let i=0;i<=5;i++){
 	let x = rnd(-50,50);
     let z = rnd(-50,50);
-	birds.push(new Birds(x,z));
+	birds.push(new Bird(x,y,z));
 
 	}
 	

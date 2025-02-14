@@ -7,6 +7,8 @@ class Person{
 		this.obj.setAttribute("src","#person");
 		this.obj.setAttribute("position",{x:this.x,y:-5,z:this.z});
 		this.obj.setAttribute("scale",{x:0.2,y:0.2,z:0.2});
+		this.obj.setAttribute("animation-mixer","");
 		
+		scene.append(this.obj);
 	}
 }

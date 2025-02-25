@@ -2,7 +2,7 @@ class Bird {
     constructor(x, z) {
         this.x = x;
         this.z = z;
-        this.y = Math.random() * 10 + 30; 
+        this.y = 80
 
         this.obj = document.createElement("a-gltf-model");
         this.obj.setAttribute("src","#birds");

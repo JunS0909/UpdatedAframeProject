@@ -14,7 +14,7 @@ window.onload = function(){
 	birds.push(Bird);
 }
 
-    c = this.camera;
+    c = new Car(0, 0, 0);
 
 	
 	window.addEventListener("keydown",function(e){

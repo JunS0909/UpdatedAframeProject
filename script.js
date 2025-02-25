@@ -27,6 +27,7 @@ window.onload = function(){
 			 mainCamera.object3D.position.x = c.camera.object3D.position.x += 1;
 			 mainCamera.object3D.position.z = c.camera.object3D.position.z += 1;
 		 }
+
 	  })
 	  
 
@@ -42,9 +43,9 @@ function loop(){
 
 	let sky = document.querySelector("a-sky");
 	if (sun.object3D.rotation.y < Math.PI / 2) {
-		sky.setAttribute("color", "lightblue"); // Daytime color
+		sky.setAttribute("color", "lightblue"); 
 	  } else {
-		sky.setAttribute("color", "darkblue"); // Nighttime color
+		sky.setAttribute("color", "darkblue"); 
 	  }
 	  window.requestAnimationFrame(loop);
 }

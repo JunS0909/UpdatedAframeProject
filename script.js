@@ -36,12 +36,7 @@ window.onload = function(){
 	loop();
 }
 function loop(){
-	//console.log(mainCamera.object3D.position.x);
-	//console.log(mainCamera.object3D.position.z);
-	//console.log(c.camera.object3D.position.x);
-	//console.log(c.camera.object3D.position.z);
-	//console.log(lightsources.object3D.rotation.y);
-	birds.birdsFly;
+	birds.birdsFly();
 	lightsources.object3D.rotation.z += 0.002;
 	window.requestAnimationFrame(loop);
 

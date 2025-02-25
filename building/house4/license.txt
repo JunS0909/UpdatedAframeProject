@@ -1,0 +1,11 @@
+Model Information:
+* title:	Suburbian House
+* source:	https://sketchfab.com/3d-models/suburbian-house-7af6b3aa47af45f0a8693cca9ccf0c50
+* author:	Vlad Dyuhaaa (https://sketchfab.com/Dyuhaaa)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Suburbian House" (https://sketchfab.com/3d-models/suburbian-house-7af6b3aa47af45f0a8693cca9ccf0c50) by Vlad Dyuhaaa (https://sketchfab.com/Dyuhaaa) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

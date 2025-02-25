@@ -11,10 +11,10 @@ window.onload = function(){
   for (let i = 0; i < 10; i++) {
 	let x = Math.random() * 50 - 25;  
 	let z = Math.random() * 50 - 25;  
-	birds.push(bird);
+	birds.push(Bird);
 }
 
-
+    c = this.camera;
 
 	
 	window.addEventListener("keydown",function(e){

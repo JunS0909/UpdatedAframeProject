@@ -4,8 +4,8 @@ class Bird {
         this.z = z;
         this.y = Math.random() * 10 + 30; 
 
-        this.obj = document.createElement("a-entity");
-        this.obj.setAttribute("gltf-model", "#birds");
+        this.obj = document.createElement("a-gltf-model");
+        this.obj.setAttribute("src","#birds");
         this.obj.setAttribute("position", { x: this.x, y: this.y, z: this.z });
         this.obj.setAttribute("scale", { x: 2, y: 2, z: 2 });
         this.obj.setAttribute("animation-mixer", "");
@@ -22,7 +22,7 @@ class Bird {
     }
 }
 
-// Animate birds
+
 function animateBirds() {
     birds.forEach(bird => bird.moveRandomly());
     requestAnimationFrame(animateBirds);

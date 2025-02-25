@@ -11,6 +11,7 @@ window.onload = function(){
   for (let i = 0; i < 10; i++) {
 	let x = Math.random() * 50 - 25;  
 	let z = Math.random() * 50 - 25;  
+	let bird = new Bird(x, z);
 	birds.push(birds);
 }
 
@@ -35,12 +36,12 @@ window.onload = function(){
 	loop();
 }
 function loop(){
-	console.log(mainCamera.object3D.position.x);
-	console.log(mainCamera.object3D.position.z);
-	console.log(c.camera.object3D.position.x);
-	console.log(c.camera.object3D.position.z);
-	console.log(lightsources.object3D.rotation.y);
-	//c.move();
+	//console.log(mainCamera.object3D.position.x);
+	//console.log(mainCamera.object3D.position.z);
+	//console.log(c.camera.object3D.position.x);
+	//console.log(c.camera.object3D.position.z);
+	//console.log(lightsources.object3D.rotation.y);
+
 	lightsources.object3D.rotation.z += 0.002;
 	window.requestAnimationFrame(loop);
 

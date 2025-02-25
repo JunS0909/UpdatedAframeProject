@@ -36,8 +36,15 @@ window.onload = function(){
 	loop();
 }
 function loop(){
-	birds.forEach(bird => bird.moveRandomly());
-	lightsources.object3D.rotation.z += 0.002;
-	window.requestAnimationFrame(loop);
 
+	lightsources.object3D.rotation.z += 0.002;
+	sun.object3D.rotation.y += 0.001;
+
+	let sky = document.querySelector("a-sky");
+	if (sun.object3D.rotation.y < Math.PI / 2) {
+		sky.setAttribute("color", "lightblue"); // Daytime color
+	  } else {
+		sky.setAttribute("color", "darkblue"); // Nighttime color
+	  }
+	  window.requestAnimationFrame(loop);
 }

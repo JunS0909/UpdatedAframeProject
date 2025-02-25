@@ -36,7 +36,7 @@ window.onload = function(){
 	loop();
 }
 function loop(){
-	birds.moverandomly();
+	birds.forEach(bird => bird.moveRandomly());
 	lightsources.object3D.rotation.z += 0.002;
 	window.requestAnimationFrame(loop);
 

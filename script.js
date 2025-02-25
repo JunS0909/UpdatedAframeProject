@@ -11,7 +11,7 @@ window.onload = function(){
   for (let i = 0; i < 10; i++) {
 	let x = Math.random() * 50 - 25;  
 	let z = Math.random() * 50 - 25;  
-	birds.push(Bird);
+	birds.push(birds);
 }
 
     c = new Car(0, 0, 0);

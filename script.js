@@ -8,9 +8,9 @@ window.onload = function(){
   mainCamera = document.getElementById("mainCamera");
   
 
-  for (let i = 0; i < 10; i++) {
-	let x = Math.random() * 50 - 25;  
-	let z = Math.random() * 50 - 25;  
+  for (let i = 0; i < 30; i++) {
+	let x = Math.random() * 200 - 50;  
+	let z = Math.random() * 200 - 50;  
 	let bird = new Bird(x, z);
 	birds.push(birds);
 }

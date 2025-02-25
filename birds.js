@@ -1,4 +1,4 @@
-class Bird{
+class bird{
     constructor(x,z){
      x = this.x;
      z = this.z;   

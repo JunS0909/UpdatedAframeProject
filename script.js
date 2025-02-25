@@ -8,6 +8,13 @@ window.onload = function(){
   mainCamera = document.getElementById("mainCamera");
   
 
+  for (let i = 0; i < 10; i++) {
+	let x = Math.random() * 50 - 25;  
+	let z = Math.random() * 50 - 25;  
+	birds.push(bird);
+}
+
+
 
 	
 	window.addEventListener("keydown",function(e){

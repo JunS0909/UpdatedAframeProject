@@ -23,7 +23,6 @@ class Bird {
 }
 
 
-function animateBirds() {
+function birdsFly() {
     birds.forEach(bird => bird.moveRandomly());
-    requestAnimationFrame(animateBirds);
 }

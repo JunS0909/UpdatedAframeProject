@@ -12,7 +12,7 @@ window.onload = function(){
 	let x = Math.random() * 200 - 50;  
 	let z = Math.random() * 200 - 50;  
 	let bird = new Bird(x, z);
-	birds.push(birds);
+	birds.push(bird);
 }
 
     c = new Car(0, 0, 0);
@@ -48,4 +48,8 @@ function loop(){
 		sky.setAttribute("color", "darkblue"); 
 	  }
 	  window.requestAnimationFrame(loop);
+
+	for(let bird of birds){
+		moveRandomly();
+	}
 }

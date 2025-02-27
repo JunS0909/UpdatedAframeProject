@@ -12,7 +12,8 @@ window.onload = function(){
   for (let i = 0; i < 30; i++) {
 	let x = Math.random() * 200 - 50;  
 	let z = Math.random() * 200 - 50;  
-	let bird = new Bird(x, z);
+	let y = Math.random() * (100-80) + 80;
+	let bird = new Bird(x,y, z);
 	birds.push(bird);
 }
 
@@ -45,7 +46,7 @@ for (let i = 0; i<10;i++){
 	  })
 	  
 
-
+	 
 	
 
 	loop();
@@ -54,13 +55,18 @@ function loop(){
 
 	lightsources.object3D.rotation.z += 0.002;
 	sun.object3D.rotation.y += 0.002;
-
+	
+	for(let bird of birds){
+		
+	}
 	let sky = document.querySelector("a-sky");
 	if (sun.object3D.position.y < 0) {
 		sky.setAttribute("color", "lightblue"); 
 	  } else {
 		sky.setAttribute("color", "darkblue"); 
 	  }
+
+
 	  window.requestAnimationFrame(loop);
 
 }

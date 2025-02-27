@@ -8,7 +8,7 @@ class Car{
 	
 		
 		this.obj = document.createElement("a-gltf-model");
-		this.obj.setAttribute("interact","");
+		this.obj.setAttribute("data-raycastable","");
 		this.obj.setAttribute("src","#car");
 		this.obj.setAttribute("scale",{x:8,y:8,z:8});
 		this.obj.setAttribute("position",{x:0,y:-9,z:0});

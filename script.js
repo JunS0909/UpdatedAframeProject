@@ -15,8 +15,11 @@ window.onload = function(){
 	birds.push(bird);
 }
 
-for (let i = 0; i<20;i++){
-	let x = Math.random() 
+for (let i = 0; i<10;i++){
+	let x = Math.random() * (135 - 115) + 115;
+	let z = Math.random() * (115 - (-115)) + (-115);
+	let person = new Person(x,z);
+	people.push(person);
 }
 
     c = new Car(0, 0, 0);
@@ -43,7 +46,7 @@ for (let i = 0; i<20;i++){
 function loop(){
 
 	lightsources.object3D.rotation.z += 0.002;
-	sun.object3D.rotation.y += 0.001;
+	sun.object3D.rotation.y += 0.002;
 
 	let sky = document.querySelector("a-sky");
 	if (sun.object3D.position.y < 0) {

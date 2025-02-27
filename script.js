@@ -6,7 +6,8 @@ window.onload = function(){
   sun = document.getElementById("sun");
   moon = document.getElementById("moon");
   mainCamera = document.getElementById("mainCamera");
-  
+  tp = document.getElementById("teleport");
+  skyCamera = document.getElementById("skyCamera");
 
   for (let i = 0; i < 30; i++) {
 	let x = Math.random() * 200 - 50;  
@@ -23,7 +24,12 @@ for (let i = 0; i<10;i++){
 }
 
     c = new Car(0, 0, 0);
-
+	tp.addEventListener("click",function(){
+		console.log("q");
+		mainCamera.setAttribute("active",false);
+		c.camera.setAttribute("active",false);
+		skyCamera.setAttribute("active",true);
+	})
 	
 	window.addEventListener("keydown",function(e){
 		

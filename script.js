@@ -55,8 +55,8 @@ function loop(){
 	lightsources.object3D.rotation.z += 0.002;
 	sun.object3D.rotation.y += .02;
 	
-	for(let bird of birds){
-		
+	for(let Bird of birds){
+		Bird.fly();
 	}
 	let sky = document.querySelector("a-sky");
 	if (sun.object3D.rotation.y > Math.PI / 2) {

@@ -1,5 +1,5 @@
 let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
-let scene, lightsources, trees = [],c, birds = [], person;
+let scene, lightsources, trees = [],c, birds = [], people = [];
 window.onload = function(){
   scene = document.querySelector("a-scene"); 
   lightsources= document.getElementById("lightsources");
@@ -13,6 +13,10 @@ window.onload = function(){
 	let z = Math.random() * 200 - 50;  
 	let bird = new Bird(x, z);
 	birds.push(bird);
+}
+
+for (let i = 0; i<20;i++){
+	let x = Math.random() 
 }
 
     c = new Car(0, 0, 0);
@@ -42,14 +46,11 @@ function loop(){
 	sun.object3D.rotation.y += 0.001;
 
 	let sky = document.querySelector("a-sky");
-	if (sun.object3D.rotation.y < Math.PI / 2) {
+	if (sun.object3D.position.y < 0) {
 		sky.setAttribute("color", "lightblue"); 
 	  } else {
 		sky.setAttribute("color", "darkblue"); 
 	  }
 	  window.requestAnimationFrame(loop);
 
-	for(let bird of birds){
-		moveRandomly();
-	}
 }

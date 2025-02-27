@@ -3,6 +3,8 @@ class Bird {
         this.x = x;
         this.z = z;
         this.y = y;
+        this.a = 0;
+         this.da = 0.002;
 
         this.obj = document.createElement("a-gltf-model");
         this.obj.setAttribute("src","#birds");
@@ -14,8 +16,9 @@ class Bird {
     }
 
     fly() {
-        this.x += (Math.random() * 2 - 1); 
-        this.z += (Math.random() * 2 - 1); 
+        this.a += this.da
+        this.x = 8 * Math.cos(bird.a);
+        this.z = 8 * Math.sin(bird.a);
         this.y += (Math.random() * 0.5 - 0.25); 
 
         this.obj.object3D.position.x = this.x;

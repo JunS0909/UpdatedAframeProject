@@ -7,10 +7,10 @@ window.onload = function(){
   moon = document.getElementById("moon");
   mainCamera = document.getElementById("mainCamera");
   tp = document.getElementById("teleport");
-  skyCamera = document.getElementById("skyCamera");
+  nCamera = document.getElementById("nCamera");
 
   for (let i = 0; i < 30; i++) {
-	let x = Math.random() * 200 - 50;  
+	let x = Math.random() * (200 - (-200)) + (-200);  
 	let z = Math.random() * 200 - 50;  
 	let y = Math.random() * (100-80) + 80;
 	let bird = new Bird(x,y, z);
@@ -27,10 +27,9 @@ for (let i = 0; i<10;i++){
     c = new Car(0, 0, 0);
 	tp.addEventListener("click",function(){
 		console.log("q");
+		nCamera.setAttribute("active",true);
 		mainCamera.setAttribute("active",false);
 		c.camera.setAttribute("active",false);
-		skyCamera.setAttribute("active",true);
-		skyCamera.setAttribute("look-controls.enabled", true);
 	})
 	
 	window.addEventListener("keydown",function(e){
@@ -54,13 +53,13 @@ for (let i = 0; i<10;i++){
 function loop(){
 
 	lightsources.object3D.rotation.z += 0.002;
-	sun.object3D.rotation.y += 0.002;
+	sun.object3D.rotation.y += .02;
 	
 	for(let bird of birds){
 		
 	}
 	let sky = document.querySelector("a-sky");
-	if (sun.object3D.position.y < 0) {
+	if (sun.object3D.rotation.y > Math.PI / 2) {
 		sky.setAttribute("color", "lightblue"); 
 	  } else {
 		sky.setAttribute("color", "darkblue"); 

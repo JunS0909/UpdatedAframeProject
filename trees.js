@@ -6,9 +6,9 @@ class Tree{
 		
 
 
-	this.obj = document.createElement("a-gltf-model");
-		this.obj.setAttribute("src","#trees");
-		this.obj.setAttribute("position",{x:this.x,y:-5,z:this.z});
+	this.obj = document.createElement("a-sphere");
+		this.obj.setAttribute("radius",4);
+		this.obj.setAttribute("position",{x:this.x,y:100,z:this.z});
 		this.obj.setAttribute("scale",{x:40,y:60,z:40});
 		scene.append(this.obj);
 

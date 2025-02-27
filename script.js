@@ -29,6 +29,7 @@ for (let i = 0; i<10;i++){
 		mainCamera.setAttribute("active",false);
 		c.camera.setAttribute("active",false);
 		skyCamera.setAttribute("active",true);
+		skyCamera.setAttribute("look-controls.enabled", true);
 	})
 	
 	window.addEventListener("keydown",function(e){

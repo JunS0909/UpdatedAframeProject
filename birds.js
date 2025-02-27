@@ -17,8 +17,8 @@ class Bird {
 
     fly() {
         this.a += this.da
-        this.x = 8 * Math.cos(bird.a);
-        this.z = 8 * Math.sin(bird.a);
+        this.x += (Math.random() * 0.5 - 0.25); 
+        this.z += (Math.random() * 0.5 - 0.25); 
         this.y += (Math.random() * 0.5 - 0.25); 
 
         this.obj.object3D.position.x = this.x;

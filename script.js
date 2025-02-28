@@ -8,6 +8,9 @@ window.onload = function(){
   mainCamera = document.getElementById("mainCamera");
   tp = document.getElementById("teleport");
   school = document.getElementById("school");
+  button= document.getElementById("button");
+  plane = document.getElementById("plane");
+  park = document.getElementById("park");
   nCamera = document.getElementById("nCamera");
   randoma = document.getElementById("randoma");
   randomb = document.getElementById("randomb");
@@ -50,9 +53,32 @@ for (let i = 0; i<10;i++){
 		mainCamera.setAttribute("active",false);
 		c.camera.setAttribute("active",false);
 	})
-	
-	randoma.addEventlistener("click",function(){
-		school.setAttribute("kinema-body","");
+	randoma.addEventListener("click",function(){
+		console.log("click");
+		school.setAttribute("dynamic-body","");
+	})
+	button.addEventListener("click",function(){
+		plane.remove();
+		park.remove();
+		school.setAttribute("dynamic-body","");
+		randoma.setAttribute("dynamic-body","");
+		randomb.setAttribute("dynamic-body","");
+		randomc.setAttribute("dynamic-body","");
+		randomd.setAttribute("dynamic-body","");
+		randome.setAttribute("dynamic-body","");
+		randomf.setAttribute("dynamic-body","");
+		randomg.setAttribute("dynamic-body","");
+		randomh.setAttribute("dynamic-body","");
+		randomi.setAttribute("dynamic-body","");
+		randomj.setAttribute("dynamic-body","");
+		randomk.setAttribute("dynamic-body","");
+		randoml.setAttribute("dynamic-body","");
+		randomm.setAttribute("dynamic-body","");
+		randomn.setAttribute("dynamic-body","");
+		randomo.setAttribute("dynamic-body","");
+		randomp.setAttribute("dynamic-body","");
+		randomq.setAttribute("dynamic-body","");
+		randomr.setAttribute("dynamic-body","");
 	})
 
 	window.addEventListener("keydown",function(e){
@@ -88,9 +114,7 @@ function loop(){
 	  } else {
 		sky.setAttribute("color", "darkblue"); 
 	  }
-	if(collision(c,person)<1){
-		console.log(collide);
-	}
+
 
 	  window.requestAnimationFrame(loop);
 

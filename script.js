@@ -80,7 +80,8 @@ for (let i = 0; i<10;i++){
 	})
 
 	window.addEventListener("click",function(){
-		scene.components.playSound();
+		mainCamera.components.sound.playSound();
+		nCamera.components.sound.playSound();
 	})
 	window.addEventListener("keydown",function(e){
 		

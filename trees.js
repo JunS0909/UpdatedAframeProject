@@ -1,9 +1,9 @@
 
 class Tree{
-	constructor(x,z){
+	constructor(x,y,z){
 		this.x = x;
 		this.z = z;
-		
+		this.y = y;
 
 
 	this.obj = document.createElement("a-sphere");

@@ -117,6 +117,10 @@ function loop(){
 	randomh.addEventListener("click",function(){
 		sun.setAttribute("static-body","");
 	})
+
+	randomi.addEventListener("click",function(){
+		school.components.sound.playSound();
+	})
 	lightsources.object3D.rotation.z += 0.002;
 	sun.object3D.rotation.y += .02;
 	

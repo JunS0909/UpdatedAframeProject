@@ -19,11 +19,10 @@
 			<a-assets_item id="birds" src="birds/scene.gltf"></a-assets_item>
 			<a-assets_item id="car" src="car/scene.gltf"></a-assets_item>
 			<a-assets_item id="school" src="building/school/scene.gltf"></a-assets_item>
-			<a-assets_item id="house1" src="building/house1/scene.gltf"></a-assets_item>
-			<a-assets_item id="house2" src="building/house2/scene.gltf"></a-assets_item>
-			<a-assets_item id="house3" src="building/house3/scene.gltf"></a-assets_item>
-			<a-assets_item id="house4" src="building/house4/scene.gltf"></a-assets_item>
-			<a-assets_item id="apt" src="building/house5/scene.gltf"></a-assets_item>
+			<audio id="alarm" src="sounds/alarm.mp3" preload="auto"></audio>
+			<audio id="knock" src="sounds/knock.wav" preload="auto"></audio>
+			<audio id="bell" src="sounds/bell.wav" preload="auto"></audio>
+			<audio id="click" src="sounds/click.mp3" preload="auto"></audio>
 			</a-assets>
 		<a-entity light="type: ambient; color: #777;intensity:0.2"></a-entity>	
 		<a-plane id="plane" static-body position="0 -5 0" rotation="-90 0 0" width="500" height="500" color="green" shadow="receive: true"></a-plane>
@@ -70,7 +69,7 @@
 			</a-camera>
 	  <a-box rotation="-90 0 0" position="0 150 0" color="white" height="500" width="500" opacity="0"></a-box>
 	  <a-box position="5 150 0" height="3" width="2" depth="2" color="gray">
-		<a-cylinder data-raycastable position="0 0 0" radius=".45" height="3.5" id="button" color="red"></a-cylinder>
+		<a-cylinder data-raycastable position="0 0 0" radius=".45" height="3.5" id="button" color="red" sound="src: #alarm;loop:true;volume:0.5"></a-cylinder>
 	  </a-box>
 	  
 

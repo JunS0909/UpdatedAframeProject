@@ -54,9 +54,11 @@ for (let i = 0; i<10;i++){
 		c.camera.setAttribute("active",false);
 	})
 
+
 	button.addEventListener("click",function(){
 		plane.remove();
 		park.remove();
+		button.components.sound.playSound();
 		randoma.setAttribute("dynamic-body","");
 		randomb.setAttribute("dynamic-body","");
 		randomc.setAttribute("dynamic-body","");
@@ -109,6 +111,12 @@ function loop(){
 	randomc.addEventListener("click",function(){
 		moon.setAttribute("dynamic-body","");
 	}) 
+	randoml.addEventListener("click",function(){
+		moon.setAttribute("static-body","");
+	})
+	randomh.addEventListener("click",function(){
+		sun.setAttribute("static-body","");
+	})
 	lightsources.object3D.rotation.z += 0.002;
 	sun.object3D.rotation.y += .02;
 	

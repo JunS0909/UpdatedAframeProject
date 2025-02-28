@@ -79,6 +79,9 @@ for (let i = 0; i<10;i++){
 		randomr.setAttribute("dynamic-body","");
 	})
 
+	window.addEventListener("click",function(){
+		scene.components.playSound();
+	})
 	window.addEventListener("keydown",function(e){
 		
 		 if(e.key == "e"){
@@ -93,7 +96,7 @@ for (let i = 0; i<10;i++){
 	  
 
 	randomi.addEventListener("click",function(){
-		school.components.sound.playSound();
+		randomi.components.sound.playSound();
 	})
 	
 

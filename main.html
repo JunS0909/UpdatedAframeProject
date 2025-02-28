@@ -12,7 +12,7 @@
 	<script src="kinema.js"></script>
   </head>
   <body>
-      <a-scene physics="debug: false" light="defaultLightsEnabled: false">
+      <a-scene physics="debug: false" light="defaultLightsEnabled: false" sound="src:#click;loop:false">
 			<a-assets>
 			<a-assets_item id="trees" src="stylized_tree/scene.gltf"></a-assets_item>
 			<a-assets_item id="person" src="person/scene.gltf"></a-assets_item>
@@ -46,7 +46,7 @@
 		<a-dodecahedron data-raycastable position="-21 -5 76" radius="12" color="gray" id="randomf"></a-dodecahedron>
 		<a-dodecahedron data-raycastable position="1 -5 1" radius="4" color="gray" id="randomg"></a-dodecahedron>
 		<a-dodecahedron data-raycastable position="55 -5 -72" radius="10" color="gray" id="randomh"></a-dodecahedron>
-		<a-dodecahedron data-raycastable position="-12 -5 -84" radius="6" color="gray" id="randomi"></a-dodecahedron>
+		<a-dodecahedron data-raycastable position="-12 -5 -84" radius="6" color="gray" id="randomi" sound="src: #bell;loop:false"></a-dodecahedron>
 		<a-dodecahedron data-raycastable position="-15 -5 -8" radius="4" color="gray" id="randomj"></a-dodecahedron>
 		<a-dodecahedron data-raycastable position="-70 -5 82" radius="8" color="gray" id="randomk"></a-dodecahedron>
 		<a-dodecahedron data-raycastable position="61 -5 36" radius="4" color="gray" id="randoml"></a-dodecahedron>
@@ -57,7 +57,7 @@
 		<a-gltf-model data-raycastable src="#trees" position="31 -5 68" scale="0.02 0.02 0.02" id="randomq"></a-gltf-model>
 		<a-gltf-model data-raycastable src="#trees" position="63 -5 -88" scale="0.02 0.02 0.02" id="randomr"></a-gltf-model>
 		<a-gltf-model  rotation="0 90 0" src="#school" scale="6 6 6" position="250 -5 0" ></a-gltf-model>
-		<a-box id="school" position="250 0 0" sound="src: #bell;loop:false"></a-box>
+		<a-box  position="250 0 0" ></a-box>
 		<a-box data-raycastable position="-20 5 0" width="3" height="3" depth="3" id="teleport" ></a-box>
 		<a-sky id="day" color="white"></a-sky>
       <a-camera  active="true" id="mainCamera" position="-5 1.3 4">

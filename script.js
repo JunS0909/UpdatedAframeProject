@@ -53,14 +53,10 @@ for (let i = 0; i<10;i++){
 		mainCamera.setAttribute("active",false);
 		c.camera.setAttribute("active",false);
 	})
-	randoma.addEventListener("click",function(){
-		console.log("click");
-		school.setAttribute("dynamic-body","");
-	})
+
 	button.addEventListener("click",function(){
 		plane.remove();
 		park.remove();
-		school.setAttribute("dynamic-body","");
 		randoma.setAttribute("dynamic-body","");
 		randomb.setAttribute("dynamic-body","");
 		randomc.setAttribute("dynamic-body","");
@@ -100,7 +96,19 @@ for (let i = 0; i<10;i++){
 	loop();
 }
 function loop(){
+	randoma.addEventListener("click",function(){
+		console.log("click");
+		randoma.object3D.rotation.z += 1;
+		randoma.object3D.rotation.x += 1;
+		randoma.object3D.rotation.y += 1;
+	})
 
+	randomb.addEventListener("click",function(){
+		sun.setAttribute("dynamic-body","");
+	})
+	randomc.addEventListener("click",function(){
+		moon.setAttribute("dynamic-body","");
+	}) 
 	lightsources.object3D.rotation.z += 0.002;
 	sun.object3D.rotation.y += .02;
 	

@@ -110,9 +110,7 @@ for (let i = 0; i<10;i++){
 	randomf.addEventListener("click",function(){
 	park.object3D.position += 5;
 	})
-	randomg.addEventListener("click",function(){
-	mainCamera.setAttribute("dynamic-body","");
-	})
+	
 	randomj.addEventListener("click",function(){
 	
 	})
@@ -149,6 +147,10 @@ function loop(){
 		randoma.object3D.rotation.x += 1;
 		randoma.object3D.rotation.y += 1;
 	})
+	randomg.addEventListener("click",function(){
+		mainCamera.setAttribute("dynamic-body","");
+		mainCamera.object3D.rotation.x += 2;
+		})
 
 	randomb.addEventListener("click",function(){
 		sun.setAttribute("dynamic-body","");

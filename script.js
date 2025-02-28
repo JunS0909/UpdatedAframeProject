@@ -99,7 +99,46 @@ for (let i = 0; i<10;i++){
 	randomi.addEventListener("click",function(){
 		randomi.components.sound.playSound();
 	})
+	randomd.addEventListener("click",function(){
+		randome.object3D.position.y += 0.5;
+	})
+	randome.addEventListener("click",function(){
+	randomp.object3D.position.z += 1;
+	randomp.object3D.position.y += 1;
+	randomp.object3D.rotation.x += 15;
+	})
+	randomf.addEventListener("click",function(){
+	park.object3D.position += 5;
+	})
+	randomg.addEventListener("click",function(){
+	mainCamera.setAttribute("dynamic-body","");
+	})
+	randomj.addEventListener("click",function(){
 	
+	})
+	randomk.addEventListener("click",function(){
+	
+	})
+	randomm.addEventListener("click",function(){
+	
+	})
+	randomn.addEventListener("click",function(){
+	park.object3D.position += -5;
+	})
+	randomo.addEventListener("click",function(){
+	
+	})
+	randomp.addEventListener("click",function(){
+		randomp.components.sound.playSound();
+	})
+	randomq.addEventListener("click",function(){
+	 randomr.object3D.rotation.x += 45;
+	})
+	randomr.addEventListener("click",function(){
+	randomr.object3D.position.z += 1;
+	})
+
+
 
 	loop();
 }
